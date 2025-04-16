@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <title>キム通販</title>
+  <!-- jQuery & plugins -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <div>
+    <h1>キム通販<a href="index.html"></a></h1>
+    <img src="img/main.jpg">
+  </div>
+
+  <header>
+    <p>私は4月末に引っ越すのため、買うべきもの</p>
+    <div class="slider">
+      <div><img src="img/slide1.png" alt="スライド1画像"></div>
+      <div><img src="img/slide2.png" alt="スライド2画像"></div>
+      <div><img src="img/slide3.png" alt="スライド3画像"></div>
+    </div>
+  </header>
+
+  <!-- カートを見るリンク -->
+  <a href="#" id="openCartModal">🛒 カートを見る</a>
+
+  <section class="products">
+    <h2>商品一覧</h2>
+    <div class="sort-button">
+      <button id="sort-desc"><img src="img/1.png" alt="価格昇順"></button>
+      <button id="sort-asc"><img src="img/2.png" alt="価格降順"></button>
+    </div>
+	
+		<div class="product-list">
+			<div class="product"> <!--				ベッド				-->
+				<a href="https://amzn.asia/d/2qf0vsm" target="_blank">
+					<img src="img/bed.jpg" alt="収納付きベッド画像">
+				</a>
+				<div class="product-grid">
+					<p class="product-name">収納付きベッド</p>
+					<p class="product-price">¥ 29,980</p>
+					<label>
+						数量選択
+						<select>
+							<option>0</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+						</select>
+					</label>
+					<button>カートに追加</button>
+				</div>
+			</div>
+			<!--				product全体繰り返し				-->
+
+			<div class="product"> <!--				椅子				-->
+				<a href="https://amzn.asia/d/4O14fOf" target="_blank">
+					<img src="img/chair.jpg" alt="オフィスチェア画像">
+				</a>
+				<div class="product-grid">
+					<p class="product-name">オフィスチェア</p>
+					<p class="product-price">¥ 34,999</p>
+					<label>
+						数量選択
+						<select>
+							<option>0</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+						</select>
+					</label>
+					<button>カートに追加</button>
+				</div>
+			</div>
+
+			<div class="product"> <!--				フロアタイル				-->
+				<a href="https://amzn.asia/d/3fn1Uar" target="_blank">
+					<img src="img/floor_tile.jpg" alt="フロアタイル画像">
+				</a>
+				<div class="product-grid">
+					<p class="product-name">フロアタイル</p>
+					<p class="product-price">¥ 11,590</p>
+					<label>
+						数量選択
+						<select>
+							<option>0</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+						</select>
+					</label>
+					<button>カートに追加</button>
+				</div>
+			</div>
+
+			<div class="product"> <!--				モニター				-->
+				<a href="https://amzn.asia/d/ckplPt3" target="_blank">
+					<img src="img/4k_monitor.jpg" alt="モニター画像">
+				</a>
+				<div class="product-grid">
+					<p class="product-name">LG 4k モニター</p>
+					<p class="product-price">¥ 40,800</p>
+					<label>
+						数量選択
+						<select>
+							<option>0</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+						</select>
+					</label>
+					<button>カートに追加</button>
+				</div>
+			</div>
+
+
+			<div class="product"> <!--				パンツハンガーラック				-->
+				<a href="https://amzn.asia/d/5RkT0ae" target="_blank">
+					<img src="img/pants_hanger.jpg" alt="パンツハンガーラックの画像">
+				</a>
+				<div class="product-grid">
+					<p class="product-name">パンツラック</p>
+					<p class="product-price">¥ 5,190</p>
+					<label>
+						数量選択
+						<select>
+							<option>0</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+						</select>
+					</label>
+					<button>カートに追加</button>
+				</div>
+			</div>
+
+			<div class="product"> <!--				突っ張りラック				-->
+				<a href="https://amzn.asia/d/eWZwxhI" target="_blank">
+					<img src="img/tsuppari_rack.jpg" alt="壁面収納突っ張りラックの画像">
+				</a>
+				<div class="product-grid">
+					<p class="product-name">突っ張りラック</p>
+					<p class="product-price">¥ 11,980</p>
+					<label>
+						数量選択
+						<select>
+							<option>0</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+						</select>
+					</label>
+					<button>カートに追加</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	  <!-- お問い合わせフォーム -->
+	  <section class="contact">
+	    <h3>お問い合わせ</h3>
+	    <form>
+	      <input type="text" name="your-name" placeholder="例：田中 太郎">
+	      <input type="email" name="your-email" placeholder="例：example@mail.com">
+	      <label>
+	        <textarea name="your-message" placeholder="お問い合わせ内容を入力してください"></textarea>
+	      </label>
+	      <button type="submit">送信</button>
+	    </form>
+	  </section>
+
+	  <!-- カスタムモーダル（jQuery版） -->
+	  <div id="cartModal" class="modal">
+	    <div class="cart-summary">
+	      <span class="close">&times;</span>
+	      <h2>🛒 カート内容</h2>
+	      <p>合計点数: <span id="totalQuantity">0</span></p>
+	      <p>合計金額: ¥<span id="totalPrice">0</span></p>
+	      <ul id="cartItemList"></ul>
+	      <button id="clearCart">カートリセット</button>
+	    </div>
+	  </div>
+	</body>
+
+	</html>

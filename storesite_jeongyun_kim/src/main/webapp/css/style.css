@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+html {
+  font-size: 100%;
+}
+
+.sort-button button {
+  margin-bottom: 5px;
+}
+
+header {
+  text-align: left;
+}
+
+.slider {
+  width: 50%;
+  max-width: 500px;
+  margin-left: 30px;
+}
+
+.slider img {
+  width: 80%;
+  height: auto;
+  border-radius: 10px; 
+}
+
+.product {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  border: 1px solid darkgoldenrod;
+  background-color: antiquewhite;
+  align-items: center;
+}
+
+.product img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.product-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  grid-column: 1 / 2;
+}
+
+.product-price {
+  font-size: 1.1em;
+  margin: 5px 0;
+  color: #333;
+  text-align: left;
+  grid-column: 2 / 3;
+}
+
+.product-grid label {
+  grid-column: 3 / 4;
+}
+
+.product-grid button {
+  grid-column: 4 / 5;
+}
+
+.product select,
+.product button {
+  padding: 4px;
+  font-size: 0.9em;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.product button {
+  padding: 6px 10px;
+  background-color: #ffd814;
+  border: 1px solid #fcd200;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* モーダルスタイル（ページ読み込み時に表示しないようにする）
+ */
+.modal {
+  display: none; /* 最初は非表示  */
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+	}
+
+.modal .cart-summary {
+  background-color: #fff;
+  margin: auto;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+}
+
+.modal .cart-summary.animate-in {
+  transform: translateX(0); /* 左からスライドイン */
+}
+
+.modal .cart-summary.animate-out {
+  transform: translateX(100%); /* 右へスライドアウト */
+}
+
+.modal .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* お問い合わせフォームスタイル  */
+.contact {
+  padding: 20px;
+  background-color: #f0f0f0;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.contact h3 {
+  margin: 0 auto 20px;
+  font-size: 1.5em;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contact textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.contact button {
+  padding: 10px 16px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact button:hover {
+  background-color: #bbb;
+}
